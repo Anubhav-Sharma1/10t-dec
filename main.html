@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+ 
+<body>
+    <div>
+        <h2>User Details</h2>
+    </div>
+    <button id="addNewEntryButton">Add new Entry</button>
+    <p id="userDetails"></p>
+    <p>Enter your Family details</p>
+    
+    <form id="familyDetailsForm">
+        <label for="Name">Name:</label>
+        <input id="Name" autofocus />
+        <br />
+        
+        <label for="Age">Age:</label>
+        <input id="Age" /><br />
+        
+        <label for="Relation">Relation:</label>
+        <select name="Relation" id="Relation">
+            <option value="Father">Father</option>
+            <option value="Mother">Mother</option>
+            <option value="Sibling">Sibling</option>
+            <option value="Grandpa">Grandpa</option>
+            <option value="Grandma">Grandma</option>
+            <option value="Other">Other</option>
+        </select>
+ 
+        <label for="Gender">Gender:</label>
+        <select name="Gender" id="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+        </select>
+        <label for="Occupation">Occupation</label>
+        <input type="text">
+        <button type="submit">Save Details</button>
+    </form>
+    
+    <h3>Family Details:</h3>
+    <table id="familyDetailsTable" border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Relation</th>
+                <!-- <th>Gender</th> -->
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div id="popup" class="popup" style="display: none;">
+        <h4>Family Member Details</h4>
+        <p><strong>Name:</strong> <span id="popupName"></span></p>
+        <p><strong>Age:</strong> <span id="popupAge"></span></p>
+        <p><strong>Relation:</strong> <span id="popupRelation"></span></p>
+        <p><strong>Gender:</strong> <span id="popupGender"></span></p>
+        <p><strong>Occupation:</strong> <span id="popupOccupation"></span></p>
+    </div>
+    
+</body>
+ 
+</html>
